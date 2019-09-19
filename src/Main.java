@@ -22,18 +22,21 @@ public class Main {
             System.out.println("pass");
         }else System.out.println("fail");
 
-// hvilken dag er det?
-        int day;
-        day = 5;
-        if (Intervals.days(day).equals("fredag uge 1")) {
-            System.out.println("pass");
-        } else System.out.println("fail");
+// hvilket nummer har idag?
+        System.out.println("dagen i dag har nummer");
+        String day ="thursday";
+
+        int returnedDaynumber = StringSwitch.getDayNumber(day);
+
+        if (returnedDaynumber == 0) {
+            System.out.println("invalid day");
+        }else System.out.println(returnedDaynumber);
 
 
-        day =8;
-        if (Intervals.days(day).equals("ukendt dag, ukendt uge")) {
-            System.out.println("pass");
-        }else System.out.println("fail");
+
+
+
+
 
 
 
